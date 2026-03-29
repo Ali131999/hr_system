@@ -7,21 +7,21 @@ import 'app_colors.dart';
 class AppStyle {
   static TextStyle boldPrimary16 = GoogleFonts.inter(
     textStyle: TextStyle(
-      color: AppColors.primaryColor,
+      color: AppColors.primary1Color,
       fontSize: 16.sp,
       fontWeight: FontWeight.bold,
     ),
   );
   static TextStyle boldPrimary24 = GoogleFonts.inter(
     textStyle: TextStyle(
-      color: AppColors.primaryColor,
+      color: AppColors.primary1Color,
       fontSize: 24.sp,
       fontWeight: FontWeight.bold,
     ),
   );
   static TextStyle boldBlue24 = GoogleFonts.inter(
     textStyle: TextStyle(
-      color: AppColors.primaryColor,
+      color: AppColors.primary1Color,
       fontSize: 24.sp,
       fontWeight: FontWeight.bold,
     ),
@@ -70,14 +70,14 @@ class AppStyle {
   );
   static TextStyle boldDarkBlue14 = GoogleFonts.inter(
     textStyle: TextStyle(
-      color: AppColors.blue,
+      color: AppColors.primary2Color,
       fontSize: 14.sp,
       fontWeight: FontWeight.bold,
     ),
   );
   static TextStyle mediumDarkBlue16 = GoogleFonts.inter(
     textStyle: TextStyle(
-      color: AppColors.blue,
+      color: AppColors.primary2Color,
       fontSize: 16.sp,
       fontWeight: FontWeight.w500,
     ),
@@ -91,7 +91,7 @@ class AppStyle {
   );
   static TextStyle mediumGray14 = GoogleFonts.inter(
     textStyle: TextStyle(
-      color: AppColors.mediumGray,
+      color: AppColors.gray,
       fontSize: 14.sp,
       fontWeight: FontWeight.w500,
     ),
@@ -176,21 +176,21 @@ class AppStyle {
   );
   static TextStyle boldDarkBlue20 = GoogleFonts.inter(
     textStyle: TextStyle(
-      color: AppColors.blue,
+      color: AppColors.primary2Color,
       fontSize: 20.sp,
       fontWeight: FontWeight.bold,
     ),
   );
   static TextStyle boldDarkBlue16 = GoogleFonts.inter(
     textStyle: TextStyle(
-      color: AppColors.blue,
+      color: AppColors.primary2Color,
       fontSize: 16.sp,
       fontWeight: FontWeight.bold,
     ),
   );
   static TextStyle mediumBlue16 = GoogleFonts.inter(
     textStyle: TextStyle(
-      color: AppColors.primaryColor,
+      color: AppColors.primary1Color,
       fontSize: 16.sp,
       fontWeight: FontWeight.w500,
     ),
@@ -228,12 +228,12 @@ class AppStyle {
   static TextStyle meduimBlueLight16 = GoogleFonts.inter(
     textStyle: TextStyle(
       fontStyle: FontStyle.italic,
-      color: AppColors.blueLight,
+      color: AppColors.secondary1Color,
       fontWeight: FontWeight.bold,
       fontSize: 16.sp,
       decoration: TextDecoration.underline,
       decorationThickness: 1.2,
-      decorationColor: AppColors.blueLight,
+      decorationColor: AppColors.secondary1Color,
     ),
   );
 
@@ -247,7 +247,7 @@ class AppStyle {
 
   static TextStyle boldGrey14 = GoogleFonts.inter(
     textStyle: TextStyle(
-      color: AppColors.grey,
+      color: AppColors.gray,
       fontSize: 14.sp,
       fontWeight: FontWeight.bold,
     ),

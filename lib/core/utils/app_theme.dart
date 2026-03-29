@@ -15,7 +15,7 @@ class AppTheme {
       type: BottomNavigationBarType.fixed,
       elevation: 0,
       selectedIconTheme: IconThemeData(color: AppColors.white),
-      unselectedIconTheme: IconThemeData(color: AppColors.blue),
+      unselectedIconTheme: IconThemeData(color: AppColors.primary2Color),
     ),
   );
 }

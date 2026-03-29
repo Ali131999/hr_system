@@ -143,12 +143,12 @@ class _CustomTextFieldState extends State<CustomTextField> {
           hintText: widget.hint,
           hintStyle: widget.hintStyle ?? AppStyle.meduimBlack16,
           counterText: "",
-          fillColor: widget.fillColor ?? AppColors.primaryColor,
+          fillColor: widget.fillColor ?? AppColors.primary1Color,
           filled: true,
           border: OutlineInputBorder(
             borderRadius: BorderRadius.circular(10.r),
             borderSide: const BorderSide(
-              color: AppColors.primaryColor,
+              color: AppColors.primary1Color,
               width: 1,
             ),
           ),
@@ -157,21 +157,21 @@ class _CustomTextFieldState extends State<CustomTextField> {
           disabledBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(10.r),
             borderSide: const BorderSide(
-              color: AppColors.primaryColor,
+              color: AppColors.primary1Color,
               width: 1,
             ),
           ),
           enabledBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(10.r),
             borderSide: const BorderSide(
-              color: AppColors.primaryColor,
+              color: AppColors.primary1Color,
               width: 1,
             ),
           ),
           focusedBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(10.r),
             borderSide: const BorderSide(
-              color: AppColors.primaryColor,
+              color: AppColors.primary1Color,
               width: 1,
             ),
           ),
