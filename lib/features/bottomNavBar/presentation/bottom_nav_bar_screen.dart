@@ -25,7 +25,7 @@ class _BottomNavBarScreenState extends State<BottomNavBarScreen> {
             onTap: cubit.changeIndex,
             items: [
               customedBottomNavigationBarItem(icon: Icons.home, index: 0),
-              customedBottomNavigationBarItem(icon: Icons.map, index: 1),
+              customedBottomNavigationBarItem(icon: Icons.place, index: 1),
               customedBottomNavigationBarItem(icon: Icons.people, index: 2),
               customedBottomNavigationBarItem(icon: Icons.message, index: 3),
               customedBottomNavigationBarItem(icon: Icons.person, index: 4),
