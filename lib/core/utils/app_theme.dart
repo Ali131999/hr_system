@@ -4,18 +4,11 @@ import 'app_colors.dart';
 
 class AppTheme {
   static ThemeData lightTheme = ThemeData(
-    scaffoldBackgroundColor: AppColors.white,
-    appBarTheme: AppBarTheme(
-      backgroundColor: AppColors.white,
-      centerTitle: true,
-      elevation: 0,
-    ),
+    scaffoldBackgroundColor: AppColors.background,
     bottomNavigationBarTheme: BottomNavigationBarThemeData(
-      backgroundColor: AppColors.white,
       type: BottomNavigationBarType.fixed,
       elevation: 0,
-      selectedIconTheme: IconThemeData(color: AppColors.white),
-      unselectedIconTheme: IconThemeData(color: AppColors.primary2Color),
+      backgroundColor: AppColors.white,
     ),
   );
 }

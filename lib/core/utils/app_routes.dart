@@ -1,5 +1,10 @@
+import 'package:flutter/material.dart';
+import 'package:hr_system/features/bottomNavBar/presentation/bottom_nav_bar_screen.dart';
+
 class AppRoutes {
-  static const String loginScreen = '/loginScreen';
-  static const String homeScreen = '/homeScreen';
-  static const String profileTab = '/profileTab';
+  static const String bottomNavBarScreen = '/bottomNavBarScreen';
+
+  static Map<String, Widget Function(BuildContext)> routes = {
+    AppRoutes.bottomNavBarScreen: (context) => BottomNavBarScreen(),
+  };
 }
