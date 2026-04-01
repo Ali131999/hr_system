@@ -47,6 +47,13 @@ class AppStyle {
       fontWeight: FontWeight.w600,
     ),
   );
+  static TextStyle w400Black12 = GoogleFonts.inter(
+    textStyle: TextStyle(
+      color: AppColors.black,
+      fontSize: 12.sp,
+      fontWeight: FontWeight.w400,
+    ),
+  );
   static TextStyle semiBoldBlack20 = GoogleFonts.inter(
     textStyle: TextStyle(
       color: AppColors.black,
