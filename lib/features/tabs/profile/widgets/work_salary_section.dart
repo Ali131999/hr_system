@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-
-import '../../../../core/utils/app_colors.dart';
 import '../../../../core/utils/app_style.dart';
 import 'custom_card.dart';
+import 'icon_and_title_work.dart';
 
 class WorkSalarySection extends StatelessWidget {
   const WorkSalarySection({super.key});
@@ -18,22 +17,22 @@ class WorkSalarySection extends StatelessWidget {
               child: Column(
                 mainAxisAlignment: .spaceAround,
                 children: [
-                  IconAndTitle(
+                  IconAndTitleWork(
                     icon: Icons.work,
                     title: "Work Info",
                     textStyle: AppStyle.boldBlack16,
                   ),
-                  IconAndTitle(
+                  IconAndTitleWork(
                     icon: Icons.confirmation_num,
                     title: "EmployID:6543",
                     textStyle: AppStyle.meduimGrey14,
                   ),
-                  IconAndTitle(
+                  IconAndTitleWork(
                     icon: Icons.tonality_outlined,
                     title: "Department Developer",
                     textStyle: AppStyle.meduimGrey14,
                   ),
-                  IconAndTitle(
+                  IconAndTitleWork(
                     icon: Icons.location_on,
                     title: "Alexandria",
                     textStyle: AppStyle.meduimGrey14,
@@ -74,20 +73,6 @@ class WorkSalarySection extends StatelessWidget {
           ),
         ],
       ),
-    );
-  }
-
-  Widget IconAndTitle({
-    required IconData icon,
-    required String title,
-    required TextStyle textStyle,
-  }) {
-    return Row(
-      children: [
-        Icon(icon, color: AppColors.primary2Color),
-        SizedBox(width: 10.w),
-        Expanded(child: Text(title, style: textStyle, maxLines: 2,softWrap: true,overflow: TextOverflow.ellipsis,)),
-      ],
     );
   }
 }

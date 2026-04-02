@@ -46,19 +46,19 @@ class CustomedHomeItem extends StatelessWidget {
                 ),
                 child: Icon(icon, color: AppColors.primary2Color, size: 15.sp),
               ),
-              AutoSizeText(title, style: AppStyle.meduimBlack14),
+              AutoSizeText(overflow:.ellipsis,title, style: AppStyle.meduimBlack14),
             ],
           ),
           Padding(
             padding: EdgeInsets.symmetric(horizontal: 10.w, vertical: 5.h),
-            child: AutoSizeText(
+            child: AutoSizeText(overflow:.ellipsis,
               subTitle1,
               style: AppStyle.boldBlack14.copyWith(color: AppColors.darkBlue),
             ),
           ),
           Padding(
             padding: EdgeInsets.symmetric(horizontal: 10.w),
-            child: AutoSizeText(subTitle2, style: AppStyle.mediumGray14),
+            child: AutoSizeText(overflow:.ellipsis,subTitle2, style: AppStyle.mediumGray14),
           ),
           InkWell(
             onTap: textButtonClick,
@@ -71,7 +71,7 @@ class CustomedHomeItem extends StatelessWidget {
                 color: AppColors.lightBlue,
                 borderRadius: BorderRadius.circular(10.r),
               ),
-              child: AutoSizeText(
+              child: AutoSizeText(overflow:.ellipsis,
                 textButton,
                 style: AppStyle.mediumGray14.copyWith(
                   color: AppColors.blueGrey,

@@ -1,11 +1,11 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:hr_system/core/utils/app_colors.dart';
 import 'package:hr_system/core/utils/app_style.dart';
 import 'package:hr_system/core/utils/custom_buttom.dart';
 import 'package:hr_system/features/tabs/home/widget/customed_home_item.dart';
 import 'package:hr_system/features/tabs/home/widget/customed_info.dart';
-import 'package:hr_system/core/utils/app_colors.dart';
 import 'package:hr_system/features/tabs/home/widget/customed_location_and_time.dart';
 import 'package:hr_system/features/tabs/home/widget/customed_quick_status_item.dart';
 
@@ -83,10 +83,10 @@ class HomeTab extends StatelessWidget {
               children: [
                 CustomedHomeItem(
                   icon: Icons.exit_to_app,
-                  title: "Attendence",
+                  title: "Attendance",
                   subTitle1: "9:42 AM   at office",
                   subTitle2: "On Time",
-                  textButton: "Absences this mounth",
+                  textButton: "Absences",
                   textButtonClick: () {},
                 ),
                 CustomedHomeItem(
