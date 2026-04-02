@@ -33,7 +33,7 @@ class HomeTab extends StatelessWidget {
                   right: 0,
                   child: Container(
                     height: 130.h,
-                    margin: EdgeInsets.symmetric(horizontal: 20.w),
+                    margin: EdgeInsets.symmetric(horizontal: 16.w),
 
                     decoration: BoxDecoration(
                       color: AppColors.white,
@@ -76,7 +76,7 @@ class HomeTab extends StatelessWidget {
             ),
           ),
           Padding(
-            padding: EdgeInsets.symmetric(horizontal: 20.w),
+            padding: EdgeInsets.symmetric(horizontal: 16.w),
             child: Wrap(
               runSpacing: 10.h,
               spacing: 10.w,

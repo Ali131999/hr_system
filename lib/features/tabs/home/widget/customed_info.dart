@@ -12,7 +12,7 @@ class CustomedInfo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.symmetric(horizontal: 20.w),
+      padding: EdgeInsets.symmetric(horizontal: 16.w),
       height: 200.h,
       width: double.infinity, // Adjust the height as needed for the top section
       color: AppColors.primary2Color,
