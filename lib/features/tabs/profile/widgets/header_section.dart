@@ -9,7 +9,7 @@ class HeaderSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 150.h,
+      height: 105.h,
       decoration: const BoxDecoration(
         gradient: LinearGradient(
           colors: [AppColors.primary2Color, AppColors.secondary2Color],
@@ -19,7 +19,7 @@ class HeaderSection extends StatelessWidget {
       ),
       child: SafeArea(
         child: Padding(
-          padding: EdgeInsets.symmetric(horizontal: 16.w),
+          padding: EdgeInsets.symmetric(horizontal: 20.w, vertical: 10.h),
           child: Row(
             mainAxisAlignment: .end,
             crossAxisAlignment: .start,
