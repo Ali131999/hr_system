@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:hr_system/core/utils/app_colors.dart';
-import 'package:hr_system/core/utils/app_style.dart';
+
+import '../../../../core/utils/app_colors.dart';
+import '../../../../core/utils/app_style.dart';
 import 'custom_card.dart';
 
 class WorkSalarySection extends StatelessWidget {
@@ -17,31 +18,25 @@ class WorkSalarySection extends StatelessWidget {
               child: Column(
                 mainAxisAlignment: .spaceAround,
                 children: [
-                  iconAndTitle(
+                  IconAndTitle(
                     icon: Icons.work,
                     title: "Work Info",
                     textStyle: AppStyle.boldBlack16,
                   ),
-                  iconAndTitle(
+                  IconAndTitle(
                     icon: Icons.confirmation_num,
                     title: "EmployID:6543",
-                    textStyle: AppStyle.meduimGrey14.copyWith(
-                      color: AppColors.blueGrey,
-                    ),
+                    textStyle: AppStyle.meduimGrey14,
                   ),
-                  iconAndTitle(
+                  IconAndTitle(
                     icon: Icons.tonality_outlined,
                     title: "Department Developer",
-                    textStyle: AppStyle.meduimGrey14.copyWith(
-                      color: AppColors.blueGrey,
-                    ),
+                    textStyle: AppStyle.meduimGrey14,
                   ),
-                  iconAndTitle(
+                  IconAndTitle(
                     icon: Icons.location_on,
                     title: "Alexandria",
-                    textStyle: AppStyle.meduimGrey14.copyWith(
-                      color: AppColors.blueGrey,
-                    ),
+                    textStyle: AppStyle.meduimGrey14,
                   ),
                 ],
               ),
@@ -53,31 +48,25 @@ class WorkSalarySection extends StatelessWidget {
               child: Column(
                 mainAxisAlignment: .spaceAround,
                 children: [
-                  iconAndTitle(
+                  IconAndTitleWork(
                     icon: Icons.payments,
                     title: "Salary Info",
                     textStyle: AppStyle.boldBlack16,
                   ),
-                  iconAndTitle(
+                  IconAndTitleWork(
                     icon: Icons.money,
                     title: "EGP 14000",
-                    textStyle: AppStyle.meduimGrey14.copyWith(
-                      color: AppColors.blueGrey,
-                    ),
+                    textStyle: AppStyle.meduimGrey14,
                   ),
-                  iconAndTitle(
+                  IconAndTitleWork(
                     icon: Icons.timelapse,
                     title: "EGP 75/h",
-                    textStyle: AppStyle.meduimGrey14.copyWith(
-                      color: AppColors.blueGrey,
-                    ),
+                    textStyle: AppStyle.meduimGrey14,
                   ),
-                  iconAndTitle(
+                  IconAndTitleWork(
                     icon: Icons.date_range,
                     title: "28 Day/Month",
-                    textStyle: AppStyle.meduimGrey14.copyWith(
-                      color: AppColors.blueGrey,
-                    ),
+                    textStyle: AppStyle.meduimGrey14,
                   ),
                 ],
               ),
@@ -88,7 +77,7 @@ class WorkSalarySection extends StatelessWidget {
     );
   }
 
-  Widget iconAndTitle({
+  Widget IconAndTitle({
     required IconData icon,
     required String title,
     required TextStyle textStyle,
@@ -97,15 +86,7 @@ class WorkSalarySection extends StatelessWidget {
       children: [
         Icon(icon, color: AppColors.primary2Color),
         SizedBox(width: 10.w),
-        Expanded(
-          child: Text(
-            title,
-            style: textStyle,
-            maxLines: 2,
-            softWrap: true,
-            overflow: TextOverflow.ellipsis,
-          ),
-        ),
+        Expanded(child: Text(title, style: textStyle, maxLines: 2,softWrap: true,overflow: TextOverflow.ellipsis,)),
       ],
     );
   }
