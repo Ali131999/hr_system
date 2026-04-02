@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:hr_system/core/utils/app_style.dart';
 
 import '../../../../core/utils/app_colors.dart';
+import 'custom_button.dart';
 
 class ProfileCard extends StatelessWidget {
   const ProfileCard({super.key});
@@ -27,11 +28,11 @@ class ProfileCard extends StatelessWidget {
           Row(
             children: [
               Expanded(
-                child: button(text :"Profile",icon:Icons.person,onPressed: (){} ),
+                child: CustomButton(text :"Profile",icon:Icons.person,onPressed: (){} ),
               ),
               const SizedBox(width: 10),
               Expanded(
-                child: button(text: "Hire & Members",icon: Icons.work,onPressed: (){}),
+                child: CustomButton(text: "Hire & Members",icon: Icons.work,onPressed: (){}),
               ),
             ],
           ),
@@ -40,21 +41,5 @@ class ProfileCard extends StatelessWidget {
     );
   }
 
-  Widget button({required String text,required IconData icon,required void Function()? onPressed}) {
-    return GestureDetector(
-      onTap: onPressed,
-      child: Container(
-        padding: EdgeInsets.symmetric(vertical: 10.h,horizontal: 8.w),
-        decoration: BoxDecoration(
-          color: AppColors.lightBlue,
-          borderRadius: BorderRadius.circular(12.r),
-        ),
-        child: Row(children: [
-          Icon(icon,color: AppColors.primary2Color,),
-          SizedBox(width: 10.w),
-          Text(text,style: AppStyle.w400Black12,)
-        ]),
-      ),
-    );
-  }
+
 }
