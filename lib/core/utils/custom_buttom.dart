@@ -1,8 +1,6 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_svg/svg.dart';
-
 import 'app_colors.dart';
 import 'app_style.dart';
 
@@ -17,8 +15,8 @@ class CustomedButton extends StatelessWidget {
   final double? radius;
   final double? spaceBeforeText;
   final double? spaceAfterText;
-  final String? preImageName;
-  final String? sufficImageName;
+  final IconData? preIconName;
+  final IconData? sufficIconName;
   final TextStyle? textStyle;
   const CustomedButton({
     super.key,
@@ -29,8 +27,8 @@ class CustomedButton extends StatelessWidget {
     this.radius,
     this.textColor,
     this.addItem = false,
-    this.preImageName,
-    this.sufficImageName,
+    this.preIconName,
+    this.sufficIconName,
     this.spaceBeforeText,
     this.spaceAfterText,
     this.vertical,
@@ -39,44 +37,33 @@ class CustomedButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var height = MediaQuery.sizeOf(context).height;
     return MaterialButton(
       padding: EdgeInsets.symmetric(
-        vertical: vertical ?? height * 0.01,
-        horizontal: horizontal ?? 25.w,
+        vertical: vertical ?? 8.h,
+        horizontal: horizontal ?? 20.w,
       ),
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadiusGeometry.circular(radius ?? 10.r),
-        side: BorderSide(color: AppColors.primary1Color),
+        side: BorderSide(color: AppColors.primary2Color),
       ),
-      color: backgroundColor ?? AppColors.primary1Color,
+      color: backgroundColor ?? AppColors.primary2Color,
       onPressed: () {
         onPressed();
       },
       child: addItem == false
-          ? AutoSizeText(text, style: textStyle ?? AppStyle.mediumBlack16)
+          ? AutoSizeText(text, style: textStyle ?? AppStyle.mediumWhite16)
           : Row(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          if (preImageName != null)
-            SvgPicture.asset(
-              preImageName!,
-              height: 40.h,
-              width: 40.w,
-              fit: BoxFit.scaleDown,
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                if (preIconName != null)
+                  Icon(preIconName, color: AppColors.white),
+                SizedBox(width: spaceBeforeText ?? 0),
+                AutoSizeText(text, style: textStyle ?? AppStyle.mediumWhite16),
+                SizedBox(width: spaceAfterText ?? 0),
+                if (sufficIconName != null)
+                  Icon(sufficIconName, color: AppColors.white),
+              ],
             ),
-          SizedBox(width: spaceBeforeText ?? 0),
-          AutoSizeText(text, style: textStyle ?? AppStyle.mediumBlack16),
-          SizedBox(width: spaceAfterText ?? 0),
-          if (sufficImageName != null)
-            SvgPicture.asset(
-              sufficImageName!,
-              height: 24.h,
-              width: 24.w,
-              fit: BoxFit.scaleDown,
-            ),
-        ],
-      ),
     );
   }
 }

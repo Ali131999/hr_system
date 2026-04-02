@@ -153,6 +153,27 @@ class AppStyle {
       fontWeight: FontWeight.w500,
     ),
   );
+  static TextStyle meduimBlueGrey14 = GoogleFonts.inter(
+    textStyle: TextStyle(
+      color: AppColors.blueGrey,
+      fontSize: 14.sp,
+      fontWeight: FontWeight.w500,
+    ),
+  );
+  static TextStyle boldDarkBlue18 = GoogleFonts.inter(
+    textStyle: TextStyle(
+      color: AppColors.darkBlue,
+      fontSize: 18.sp,
+      fontWeight: FontWeight.bold,
+    ),
+  );
+  static TextStyle meduimPrimary2Color14 = GoogleFonts.inter(
+    textStyle: TextStyle(
+      color: AppColors.primary2Color,
+      fontSize: 14.sp,
+      fontWeight: FontWeight.w500,
+    ),
+  );
   static TextStyle meduimGray16 = GoogleFonts.inter(
     textStyle: TextStyle(
       color: AppColors.gray,

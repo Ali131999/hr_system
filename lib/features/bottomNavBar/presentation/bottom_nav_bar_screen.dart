@@ -31,7 +31,7 @@ class _BottomNavBarScreenState extends State<BottomNavBarScreen> {
               customedBottomNavigationBarItem(icon: Icons.person, index: 4),
             ],
           ),
-          body: SingleChildScrollView(child: cubit.tabs[cubit.selectedIndex]),
+          body: cubit.tabs[cubit.selectedIndex],
         );
       },
     );
