@@ -26,9 +26,8 @@ class _BottomNavBarScreenState extends State<BottomNavBarScreen> {
             items: [
               customedBottomNavigationBarItem(icon: Icons.home, index: 0),
               customedBottomNavigationBarItem(icon: Icons.place, index: 1),
-              customedBottomNavigationBarItem(icon: Icons.people, index: 2),
-              customedBottomNavigationBarItem(icon: Icons.message, index: 3),
-              customedBottomNavigationBarItem(icon: Icons.person, index: 4),
+              customedBottomNavigationBarItem(icon: Icons.assignment, index: 2),
+              customedBottomNavigationBarItem(icon: Icons.person, index: 3),
             ],
           ),
           body: cubit.tabs[cubit.selectedIndex],
