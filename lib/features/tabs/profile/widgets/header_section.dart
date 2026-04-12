@@ -20,7 +20,8 @@ class HeaderSection extends StatelessWidget {
       child: SafeArea(
         child: Padding(
           padding: EdgeInsets.symmetric(horizontal: 20.w, vertical: 10.h),
-          child: Row(
+          child:
+          Row(
             mainAxisAlignment: .end,
             crossAxisAlignment: .start,
             children: [

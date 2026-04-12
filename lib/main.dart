@@ -7,14 +7,23 @@ import 'package:hr_system/core/utils/mu_bloc_observer.dart';
 import 'package:hr_system/features/bottomNavBar/cubit/bottom_nav_bar_cubit.dart';
 import 'package:hr_system/features/firebase_services/injectable/di.dart';
 
+import 'features/tabs/employee_request/widget/menue_request/cubit/muenu_request_cubit.dart';
+
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
   Bloc.observer = MyBlocObserver();
   configureDependencies();
   runApp(
-    BlocProvider(
-      child: MyApp(),
-      create: (context) => getIt<BottomNavBarCubit>(),
+    MultiBlocProvider(
+      providers: [
+        BlocProvider(
+          create: (context) => getIt<BottomNavBarCubit>(),
+        ),
+        BlocProvider(
+          create: (context) => MenuRequestCubit(),
+        ),
+      ],
+      child: const MyApp(),
     ),
   );
 }

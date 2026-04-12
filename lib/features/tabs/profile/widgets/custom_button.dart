@@ -9,7 +9,7 @@ class CustomButton extends StatelessWidget {
   IconData icon;
   void Function()? onPressed;
 
-   CustomButton({
+  CustomButton({
     super.key,
     required this.text,
     required this.icon,
@@ -18,21 +18,23 @@ class CustomButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-        return GestureDetector(
+    return GestureDetector(
       onTap: onPressed,
       child: Container(
-        padding: EdgeInsets.symmetric(vertical: 10.h,horizontal: 8.w),
+        padding: EdgeInsets.symmetric(vertical: 10.h, horizontal: 8.w),
         decoration: BoxDecoration(
-          color: AppColors.lightBlue,
+          color: AppColors.primary2Color,
           borderRadius: BorderRadius.circular(12.r),
         ),
-        child: Row(children: [
-          Icon(icon,color: AppColors.primary2Color,),
-          SizedBox(width: 10.w),
-          Text(text,style: AppStyle.w400Black12,)
-        ]),
+        child: Row(
+          mainAxisAlignment: .center,
+          children: [
+            Icon(icon, color: AppColors.white),
+            SizedBox(width: 10.w),
+            Text(text, style: AppStyle.w400Black12),
+          ],
+        ),
       ),
     );
-
   }
 }
