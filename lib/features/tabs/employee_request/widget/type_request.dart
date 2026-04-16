@@ -10,7 +10,7 @@ class TypeRequest extends StatelessWidget {
   final String dateTo;
   final String status;
 
-  const TypeRequest({
+  const TypeRequest({super.key, 
     required this.title,
     required this.dateFrom,
     required this.dateTo,

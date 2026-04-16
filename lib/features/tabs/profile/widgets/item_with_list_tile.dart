@@ -11,6 +11,7 @@ class ItemWithListTile extends StatelessWidget {
   BorderRadius? borderRadius;
 
   ItemWithListTile({
+    super.key,
     required this.text,
     required this.icon,
     required this.onTab,

@@ -7,8 +7,6 @@ import 'package:hr_system/core/utils/app_style.dart';
 import '../cubit/menu_request_state.dart';
 import '../cubit/muenu_request_cubit.dart';
 
-
-
 class MenuRequest extends StatelessWidget {
   const MenuRequest({super.key});
 
@@ -16,7 +14,6 @@ class MenuRequest extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocBuilder<MenuRequestCubit, MenuRequestState>(
       builder: (context, state) {
-
         final selectedValue = state is MenuRequestSelected
             ? state.selectedValue
             : null;
@@ -45,14 +42,12 @@ class MenuRequest extends StatelessWidget {
           ),
 
           menuStyle: MenuStyle(
-            backgroundColor: MaterialStateProperty.all(AppColors.white),
-            padding: MaterialStateProperty.all(
+            backgroundColor: WidgetStateProperty.all(AppColors.white),
+            padding: WidgetStateProperty.all(
               EdgeInsets.symmetric(horizontal: 20.w, vertical: 10.h),
             ),
-            shape: MaterialStateProperty.all(
-              RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(14.r),
-              ),
+            shape: WidgetStateProperty.all(
+              RoundedRectangleBorder(borderRadius: BorderRadius.circular(14.r)),
             ),
           ),
 
@@ -75,4 +70,3 @@ class MenuRequest extends StatelessWidget {
     );
   }
 }
-

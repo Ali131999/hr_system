@@ -6,11 +6,7 @@ class FromToDate extends StatelessWidget {
   final DateTime? dateTime;
   final VoidCallback onTap;
 
-  FromToDate({
-    super.key,
-    required this.dateTime,
-    required this.onTap,
-  }) ;
+  const FromToDate({super.key, required this.dateTime, required this.onTap});
 
   @override
   Widget build(BuildContext context) {
@@ -25,7 +21,7 @@ class FromToDate extends StatelessWidget {
         ),
         child: Row(
           children: [
-            Icon(Icons.calendar_month_rounded , color: AppColors.primary2Color),
+            Icon(Icons.calendar_month_rounded, color: AppColors.primary2Color),
             SizedBox(width: 10.w),
             Text(
               dateTime == null
@@ -37,4 +33,4 @@ class FromToDate extends StatelessWidget {
       ),
     );
   }
-  }
+}

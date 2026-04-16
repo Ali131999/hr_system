@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "385234243606",
+    "project_id": "hr-system-e8fba",
+    "storage_bucket": "hr-system-e8fba.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:385234243606:android:faf6f102e183bed6cb6537",
+        "android_client_info": {
+          "package_name": "com.example.hr_dashboard"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6h8ClbBFY09CDnnIpsYZNrn1e65g-OB8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:385234243606:android:3a4b64072fc9908fcb6537",
+        "android_client_info": {
+          "package_name": "com.example.hr_system"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6h8ClbBFY09CDnnIpsYZNrn1e65g-OB8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
