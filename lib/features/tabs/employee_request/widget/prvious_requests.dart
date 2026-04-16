@@ -8,6 +8,7 @@ class PreviousRequests extends StatelessWidget {
   final String status;
 
   const PreviousRequests({
+    super.key,
     required this.title,
     required this.dateFrom,
     required this.dateTo,
@@ -19,7 +20,12 @@ class PreviousRequests extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        TypeRequest(title: title, dateFrom: dateFrom, dateTo: dateTo, status: status),
+        TypeRequest(
+          title: title,
+          dateFrom: dateFrom,
+          dateTo: dateTo,
+          status: status,
+        ),
       ],
     );
   }
